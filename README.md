@@ -1,3 +1,3 @@
 # ShortStocks
 
-Starter Hacks 2019
+StarterHacks 2019
