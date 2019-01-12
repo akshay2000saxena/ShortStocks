@@ -1,2 +1,2 @@
 # ShortStocks
-Project for StarterHacks 2019
+// StarterHacks 2019
