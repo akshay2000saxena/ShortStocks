@@ -1,26 +1,26 @@
-## ShortStocks
+# ShortStocks
 
-# UI:
+## UI:
   Enter stock name
   Display news
   Helpful/not helpful
 
-# Parser:
+## Parser:
   Finds links for stocks - finds articles
   Output - all relevant articles
 
-# Database:
+## Database:
   Read tag coeffs to decide relevancy
   Updates relevancy coeffs based on user input
   
-# Algorithm:
+## Algorithm:
   Determines the tag of an article
   Stores (tag, help_val) in Db
   
-# ML:
+## ML:
   Consumes (tag, help_val) & trains all of them
   Predicts most relevant tags
 
-# Final:
+## Final:
   Displays articles when a new stock price is entered, but with the pref filter from ML
   
