@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route('/search')
+@app.route('/search', methods=["GET"])
 def my_form():
     return render_template('WebPage1.html')
 
@@ -23,3 +23,7 @@ def my_form_post():
     for i in range(0, len(helpval)):
         if (helpval[i] == 1):
             finalarr.append(artprint[i])
+
+    print(finalarr)
+
+    return "blah", 200
