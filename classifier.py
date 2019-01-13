@@ -29,18 +29,8 @@ def classifier (lst):
 			if (key==word):
 				innovation_ctr = innovation_ctr + 1
 	tags = []
-	if (management_ctr >= 3):
-		tags.append("management")
-	if (legal_ctr >= 3):
-		tags.append("legal")
-	if (financial_ctr >= 3):
-		tags.append("financial")
-	if (humanresc_ctr >= 3):
-		tags.append("humanresc")
-	if (innovation_ctr >= 3):
-		tags.append("innovation")
 	if (len(tags)==0):
-		classdict = {"management": management_ctr, "legal": legal_ctr, "financial": financial_ctr, "humanresc":humanresc_ctr, "innovation": innovation_ctr}
-		tags.append(max(classdict, key=classdict.get))
+		classdict = {2: management_ctr, 3: legal_ctr, 4: financial_ctr, 5:humanresc_ctr, 6: innovation_ctr}
+		tags.append([max(classdict, key=classdict.get), 1])
 	return tags
 
