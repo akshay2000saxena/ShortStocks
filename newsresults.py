@@ -8,7 +8,7 @@ def getnews(news):
         #Get company news
         sub = {}
 
-        url = 'https://newsapi.org/v2/everything?q=MSFT&from=2019-01-11&sortBy=publishedAt&apiKey=5fbb5fe295f64199ae436a70e332e335'
+        url = 'https://newsapi.org/v2/everything?q='+news+'&from=2019-01-11&sortBy=publishedAt&apiKey=5fbb5fe295f64199ae436a70e332e335'
         json_data = requests.get(url).json()
         for i in range(0, 2):
                 source = json_data['articles'][i]['source']['name']
