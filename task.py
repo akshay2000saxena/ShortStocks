@@ -17,5 +17,9 @@ def my_form_post():
     for lst in articles:
         tag2d.append(classifier.classifier(lst))
     helpval = trainer.mlplearn(tag2d)
+    artprint = newsbot.getarticle(text)
+    finalarr = []
     
-    
+    for i in range(0, len(helpval)):
+        if (helpval[i] == 1):
+            finalarr.append(artprint[i])
