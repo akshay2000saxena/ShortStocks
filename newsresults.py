@@ -43,15 +43,6 @@ def getnews(news):
                 
                 sub[i] = article
 
-
-        # #Get financial data
-        # url = 'https://finance.yahoo.com/quote/MSFT/analysis?p=' + news
-        # html = requests.get(url).content
-        # df_list = pd.read_html(html)
-        # for i in range(0, 6):
-        #         df = df_list[i]
-        #         print(df)
         print(sub)
         return(sub)
         
-getnews('MSFT')
