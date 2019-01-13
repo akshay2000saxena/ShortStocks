@@ -1,3 +1,6 @@
+import newsbot
+import classifier
+import trainer
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
@@ -9,10 +12,10 @@ def my_form():
 @app.route('/search', methods=['POST'])
 def my_form_post():
     text = request.form['text']
-    processed_text = text.lower()
-    return """
-        <html>
-            <body>
-            </body>
-        </html>
-        """, 401
+    articles = newsbot.getnews(text)
+    tag2d = []
+    for lst in articles:
+        tag2d.append(classifier.classifier(lst))
+    helpval = trainer.mlplearn(tag2d)
+    
+    
