@@ -7,15 +7,19 @@ import getall
 	
 full = getall.getall("Navya")
 
-X = full[0]
+def mlplearn(classification):
+	
+	X = full[0]
 
-y = full[1]
+	y = full[1]
 
-clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(100, 40, 10, 2), random_state=1)
+	clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(100, 40, 10, 2), random_state=1)
 
-clf.fit(X, y)
+	clf.fit(X, y)
 
-print(clf.predict([[2, 0], [4, 1], [6, 0]]))
+	relevance_array = clf.predict([[2, 0], [4, 1], [6, 0]])
+
+
 
 
     
