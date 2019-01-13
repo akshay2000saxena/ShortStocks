@@ -29,7 +29,12 @@ def my_form_post():
     relevance_array = clf.predict(tag2d)
     artprint = newsresults.show_news(text)
     finalarr = chooser.chooser(relevance_array, artprint)
-    disp1 = finalarr
+    disp1 = finalarr[0]
+    disp2 = finalarr[1]
+    disp3 = finalarr[2]
+    disp4 = finalarr[3]
+    disp5 = finalarr[4]
+    disp6 = finalarr[5]
 
 
-    return render_template('WebPage2.html', disp1 = disp1), 200
+    return render_template('WebPage2.html', disp1 = disp1, disp2 = disp2, disp3 = disp3, disp4 = disp4, disp5 = disp5, disp6 = disp6), 200

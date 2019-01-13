@@ -78,7 +78,7 @@ body {
   .jumbotron {
     display: flex;
     align-items: center;
-    height: inline-flex;
+    height: 350px;
     background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0611/5650/solid_powder_blue_shop_preview.jpg");
     background-size: cover;
     background-position: center;
@@ -87,15 +87,15 @@ body {
   .jumbotron h2 {
     background-color: #FFFFFF;
     display: inline-block;
-    color: rgb(4, 81, 117);
+    color: #F06529;
     font-weight: 700;
     padding: 10px 35px;
     border-radius: 5px;
   }
   
   .jumbotron h3 {
-    color: rgb(4, 81, 117);
-    font-weight: 500;
+    color: #FFFFFF;
+    font-weight: bold;
   }
   
   .btn-primary {
@@ -107,9 +107,3 @@ body {
     min-width: 32px;
     min-height: 33px;
   }
-
-  #wrapper
-{
-  display: inline-block;
-  padding:20px;
-}
