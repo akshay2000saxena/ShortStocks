@@ -10,11 +10,14 @@ def getall(name):
 		cursor = cnx.cursor()
 		query = "SELECT * FROM `" + name + "`"
 		cursor.execute(query)
-		valrow = []
+		fullrow = []
+		partrow = []
 		for row in cursor:
-			valrow.append(row)
+			fullrow.append(row)
+			partrow.append(row[1])
 		cursor.close()
 		cnx.close()
-		return valrow
+		finalrow = [fullrow, partrow]
+		return finalrow
 	except Error as e:
 		print("Error while connecting to MySQL database", e)
