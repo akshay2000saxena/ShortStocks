@@ -1,32 +1,28 @@
 <html>
-  <head>
-    <title>StarterHacks | Welcome</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-  </head>
-  <body>
-    <header class="container">
-      <div class="row">
-        <h1 class="col-sm-8">ShortStock</h1>
-        <h3 class="col-sm-10">| we help you invest better</h3>
-      </div>
-    </header>
-    <section class="jumbotron">
-      <div class="row text-center">
-        <form method="POST">
-          <input type="text" name="query"/>
-          <button type="submit"><a href="WebPage2.html">Search</a>
-    </button>
-  </form>
-    </div>
-    </section>
+
+<head>
+  <title>StarterHacks | Welcome</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <header class="container">
     <div class="row">
-      <figure class="col-sm-4">
-      </figure>
+      <h1 class="col-sm-8">ShortStock</h1>
+      <h3 class="col-sm-10">| we help you invest better</h3>
     </div>
-    <footer class="container">
-    </footer>
-  </body>
+  </header>
+  <section class="jumbotron">
+    <div class="row text-center">
+      <form method="POST" action="/send">
+        <input type="text" name="query" />
+        <button type="submit"><a href="WebPage2.html">Search</a>
+        </button>
+      </form>
+    </div>
+  </section>
+</body>
 </html>
