@@ -17,7 +17,7 @@ def mlplearn(classification):
 
 	clf.fit(X, y)
 
-	relevance_array = clf.predict([[2, 0], [4, 1], [6, 0]])
+	relevance_array = clf.predict(classification)
 
 
 
