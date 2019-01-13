@@ -6,23 +6,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import string
 
-
-def getarticle(url):
-    json_data2 = requests.get(url).json()
-    result = json_data2['objects'][0]['text']
-    final = [word.strip(string.punctuation) for word in result.split()]
-    return final
-
 def getnews(news):
-        #Get company stock price
-        quote_page = 'https://m.nasdaq.com/symbol/' + news
-        page = urlopen(quote_page)
-        soup = BeautifulSoup(page, 'html.parser')
-        price_box = soup.find('div', attrs={'class':'last-sale padded-bottom displayIB paddingR5p'})
-        price = price_box.text
-        print('Current stock price: ' + price)
-        print('\n')
-
         #Get company news
         sub = {}
 
@@ -45,4 +29,4 @@ def getnews(news):
 
         print(sub)
         return(sub)
-        
+
