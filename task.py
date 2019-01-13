@@ -11,7 +11,7 @@ def my_form():
 
 @app.route('/search', methods=['POST'])
 def my_form_post():
-    text = request.form['text']
+    text = request.form['query']
     articles = newsbot.getnews(text)
     tag2d = []
     for lst in articles:
