@@ -15,19 +15,19 @@ def classifier (lst):
 	for word in lst:
 		for key in management:
 			if (key==word):
-				management_ctr++
+				management_ctr = management_ctr + 1
 		for key in legal:
 			if (key==word):
-				legal_ctr++
+				legal_ctr = legal_ctr + 1
 		for key in financial:
 			if (key==word):
-				financial_ctr++
+				financial_ctr += 1	
 		for key in humanresc:
 			if (key==word):
-				humanresc_ctr++
+				humanresc_ctr += 1
 		for key in innovation:
 			if (key==word):
-				innovation_ctr++
+				innovation_ctr += 1
     tags = []
     if (management_ctr >= 3):
     	tags.append("management")
