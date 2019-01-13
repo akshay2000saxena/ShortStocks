@@ -31,7 +31,7 @@ ulturl = "https://api.diffbot.com/v3/article?token=eac77c2dca2a627f47278a19e3850
 
 url = 'https://newsapi.org/v2/everything?q=MSFT&from=2019-01-11&sortBy=publishedAt&apiKey=5fbb5fe295f64199ae436a70e332e335'
 json_data = requests.get(url).json()
-for i in range(0, 20):
+for i in range(0, 5):
         source = json_data['articles'][i]['source']['name']
         title = json_data['articles'][i]['title']
         desc = json_data['articles'][i]['description']
