@@ -32,5 +32,5 @@ def classifier (lst):
 	if (len(tags)==0):
 		classdict = {2: management_ctr, 3: legal_ctr, 4: financial_ctr, 5:humanresc_ctr, 6: innovation_ctr}
 		tags.append([max(classdict, key=classdict.get), 1])
-	return tags
+	return tags[0]
 
