@@ -27,7 +27,9 @@ def my_form_post():
     clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(100, 40, 10, 2), random_state=1)
     clf.fit(X, y)
     relevance_array = clf.predict(tag2d)
-    artprint = newsbot.getarticle(text)
+    artprint = newsresults.show_news(text)
     finalarr = chooser.chooser(relevance_array, artprint)
-    print(finalarr)
-    return "blah", 200
+    disp1 = finalarr
+
+
+    return render_template('WebPage2.html', disp1 = disp1), 200

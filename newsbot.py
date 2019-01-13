@@ -10,6 +10,7 @@ import string
 def getarticle(url):
     json_data2 = requests.get(url).json()
     result = json_data2['objects'][0]['text']
+    print(result)
     final = [word.strip(string.punctuation) for word in result.split()]
     return final
 
@@ -31,4 +32,3 @@ def getnews(news):
         print(finallist)
 
         return(finallist)
-        
