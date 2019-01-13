@@ -15,10 +15,10 @@ def classifier (lst):
 	for word in lst:
 		for key in management:
 			if (key==word):
-				management_ctr = management_ctr + 1
+				management_ctr += 1
 		for key in legal:
 			if (key==word):
-				legal_ctr = legal_ctr + 1
+				legal_ctr += 1
 		for key in financial:
 			if (key==word):
 				financial_ctr += 1	
