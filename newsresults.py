@@ -4,7 +4,7 @@ import requests
 from urllib.request import urlopen
 import string
 
-def getnews(news):
+def show_news(news):
         #Get company news
         sub = {}
 
